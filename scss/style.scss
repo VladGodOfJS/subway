@@ -1,0 +1,214 @@
+@import "reset";
+@import 'mixin';
+@import 'variables';
+
+
+header{
+    @include fonts(14px);
+    display: flex;
+    justify-content: $justify;
+}
+
+ header .container {
+     @include  bgStyle(url('https://images.pexels.com/photos/302428/pexels-photo-302428.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'),cover );
+ }
+
+.container {
+    @include container(1170px ,800px,column, start);
+
+ }
+/////////////
+ .nav-wrap {
+     @include flex(space-around,row);
+     border: 1px solid green;
+     .menu__items {
+        border: 1px solid red;
+        @include flex(center,row);
+       .menu__item{
+           @include margin(10px);
+           @include wh(150px,50px);
+           @include colors($color1,$color2,50px);
+           @include fonts(11px);
+
+           cursor: pointer;
+           transform-origin: left top 0px;
+           transition: $trns;
+         
+           &:hover {
+            @include colors($color2,$color1,50px);
+               transition: $trns;
+               transform:matrix3d(1,0,0.00,0,0.00,0,1.00,0.008,0,-1,0,0,0,0,0,1);
+           }
+       }
+     }
+ }
+ //////////
+
+ .nav-wrap {
+
+    .logo{  
+        border: 1px solid red;
+        .logo__name{
+             @include fonts(20px);
+        }
+        .logo__img {
+            @include wh(70px,70px);
+            margin-top:($marginT - 10px);
+        }
+    }
+ }
+//////////
+
+.wrap-selects{
+    border: 1px solid green;
+    @include flex($justify,row);
+
+    .select-1 , .select-2,.select-3{
+        position: relative;
+        padding: $paddL;
+
+        .select-1__color , .select-2__station,.select-3__station{
+            @include wh(100px,30px);
+            @include colors($color1,$color3,30px);
+            @include selectStyle(3px); 
+
+        }
+      
+        .select-2__station,.select-3__station{
+            @include wh(200px,30px);
+        }
+        
+        &:after{
+            @include afterSelect;
+            @include position(120px,23px,0,0);        
+            @include bgStyle( url('/images/down-arrow.svg'),13px);
+        }
+      
+    }
+    .select-2,.select-3{
+        &:after{
+        @include afterSelect;
+        @include position(220px,23px,0,0);
+        @include bgStyle(url('/images/down-arrow.svg'),13px);
+        }
+    }
+ 
+}
+
+///////////////
+
+.slogan {
+    border: 1px solid green;
+    padding: $paddL;
+
+    .slogan__title {
+        @include fonts(55px);
+        color: $color2;
+        margin-top: $marginT;
+        border: 1px solid green;
+
+    }
+    .slogan__text{
+        color: $color1;
+        font-size: ($fz + 5);
+        margin-top: $marginT;
+        border: 1px solid green;
+    }
+
+}
+
+    .button {
+        @include colors($color1,$color2,50px);
+        @include selectStyle(3px);
+        padding-right: 15px;
+        transition: $trns;
+        margin-top: $marginT + 40;
+        font-size: $fz + 4;
+        padding: $padd2;
+        position: relative;
+        text-transform: uppercase;
+        border: 1px solid green;
+     
+        &:before {
+            @include befAftbtn;
+            @include position(-7px,50px,0,0);
+            @include wh(40px,20px);
+            border-bottom:  3px solid $color1;
+            border-left: 3px solid $color1;
+
+    }
+    &:active:before {
+        @include position(-13px,55px,0,0);
+        border-bottom: 5px solid $color3;
+        border-left: 5px solid $color3;
+        transition: .3s;
+    }
+    
+        &:after {
+            @include befAftbtn;
+            @include position(206px,-8px,0,0);
+            @include wh(40px,20px);
+            border-top: 3px solid $color1;
+            border-right: 3px solid $color1;
+}
+
+&:active:after {
+    @include position(211px,-13px,0,0);
+    border-top: 5px solid $color3;
+    border-right: 5px solid $color3;
+    transition: .3s;
+}
+
+        &:hover{
+            @include colors($color2,$color1,50px);
+           
+        }
+
+
+}
+
+////////////////
+
+.wrap-modal {
+    @include flex(center,row);
+    position: fixed;
+    @include position(0,0,0,0);
+    background-color: rgba(0,0,0,0.7);
+  
+
+    .modal-window{
+        @include wh(500px,500px);
+        @include bgStyle(url('/images/metro.png'),contain);
+        background-color: $color1;
+        margin-top: $marginT;
+
+        .close {
+         @include position(482px,-7px,0,0);
+         @include nonBorder;
+         position: relative;
+         font-size: $fz + 8px;
+         color: $color3;  
+        }
+    }
+}
+
+///////////
+
+.wrap-task-12{
+    @include flex(center,row);
+    position: fixed;
+    @include position(0,0,0,0);
+    background-color: rgba(0,0,0,0.7);
+
+    .task-12 {
+        @include wh(1000px,200px);
+        @include colors($color2,$color1,50px);
+        margin-top: $marginT;
+
+    }
+}
+
+.hide {
+    display: $hide;
+}
+

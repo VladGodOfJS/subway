@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-wrap">
+                <div class="logo">
+                    <i class="fa fa-bath" aria-hidden="true"></i>
+                    <p class="logo__name">КИЇВ </p>
+                    <img src="/images/kiev-metro-logo (1).svg" alt="logo" class="logo__img">
+                </div>
+                <nav class="menu">
+                    <ul class="menu__items">
+                        <li class="menu__item m-1" data-select="#branch">вывод ветки</li>
+                        <li class="menu__item m-2" data-select="#branch">вывод наоборот</li>
+                        <li class="menu__item m-3" data-select="#branch">вывод цвета</li>
+                        <li class="menu__item m-4" data-select="#branch">вывод между</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="wrap-selects">
+                <form class="form-selects">
+                    <div class="select-1">
+                        <select class="select-1__color">
+                            <option value="red">red</option>
+                            <option value="green">green</option>
+                            <option value="blue">blue</option>
+                        </select>
+
+                    </div>
+                    <div class="select-2">
+                        <select name="station" class="select-2__station">
+                            <option value="Академгородок">Академгородок</option>
+                            <option value="Житомирская">Житомирская</option>
+                            <option value="Святошин">Святошин</option>
+                            <option value="Нивки">Нивки</option>
+                            <option value="Берестейская">Берестейская</option>
+                            <option value="Шулявская">Шулявская</option>
+                            <option value="Политехнический институт">Политехнический институт</option>
+                            <option value="Университет">Университет</option>
+                            <option value="Театральная">Театральная</option>
+                            <option value="Крещатик">Крещатик</option>
+                            <option value="Арсенальная">Арсенальная</option>
+                            <option value="Днепр">Днепр</option>
+                            <option value="Гидропарк">Гидропарк</option>
+                            <option value="Левобережная">Левобережная</option>
+                            <option value="Дарница">Дарница</option>
+                            <option value="Черниговская">Черниговская</option>
+                            <option value="Лесная">Лесная</option>
+                            <option value="Сырец">Сырец</option>
+                            <option value="Дорогожичи">Дорогожичи</option>
+                            <option value="Лукьяновская">Лукьяновская</option>
+                            <option value="Золотые ворота">Золотые ворота</option>
+                            <option value="Дворец спорта">Дворец спорта</option>
+                            <option value="Кловская">Кловская</option>
+                            <option value="Печерская">Печерская</option>
+                            <option value="Дружбы народов">Дружбы народов</option>
+                            <option value="Выдубичи">Выдубичи</option>
+                            <option value="Славутич">Славутич</option>
+                            <option value="Осокорки">Осокорки</option>
+                            <option value="Позняки">Позняки</option>
+                            <option value="Харьковская">Харьковская</option>
+                            <option value="Вырлица">Вырлица</option>
+                            <option value="Бориспольская">Бориспольская</option>
+                            <option value="Героев Днепра">Героев Днепра</option>
+                            <option value="Минская">Минская</option>
+                            <option value="Оболонь">Оболонь</option>
+                            <option value="Тараса Шевченко">Тараса Шевченко</option>
+                            <option value="Контрактовая площадь">Контрактовая площадь</option>
+                            <option value="Почтовая площадь">Почтовая площадь</option>
+                            <option value="Площадь Независимости">Площадь Независимости</option>
+                            <option value="Площадь Льва Толстого">Площадь Льва Толстого</option>
+                            <option value="Олимпийская">Олимпийская</option>
+                            <option value="Дворец Украиная">Дворец Украина</option>
+                            <option value="Лыбедская">Лыбедская</option>
+                            <option value="Демиевская">Демиевская</option>
+                            <option value="Голосеевская">Голосеевская</option>
+                            <option value="Васильковская">Васильковская</option>
+                            <option value="Выставочный центр">Выставочный центр</option>
+                            <option value="Ипподром">Ипподром</option>
+                            <option value="Теремки">Теремки</option>
+
+
+                        </select>
+                    </div>
+                    <div class="select-3">
+                        <select name="station" class="select-3__station">
+                            <option value="Академгородок">Академгородок</option>
+                            <option value="Житомирская">Житомирская</option>
+                            <option value="Святошин">Святошин</option>
+                            <option value="Нивки">Нивки</option>
+                            <option value="Берестейская">Берестейская</option>
+                            <option value="Шулявская">Шулявская</option>
+                            <option value="Политехнический институт">Политехнический институт</option>
+                            <option value="Университет">Университет</option>
+                            <option value="Театральная">Театральная</option>
+                            <option value="Крещатик">Крещатик</option>
+                            <option value="Арсенальная">Арсенальная</option>
+                            <option value="Днепр">Днепр</option>
+                            <option value="Гидропарк">Гидропарк</option>
+                            <option value="Левобережная">Левобережная</option>
+                            <option value="Дарница">Дарница</option>
+                            <option value="Черниговская">Черниговская</option>
+                            <option value="Лесная">Лесная</option>
+                            <option value="Сырец">Сырец</option>
+                            <option value="Дорогожичи">Дорогожичи</option>
+                            <option value="Лукьяновская">Лукьяновская</option>
+                            <option value="Золотые ворота">Золотые ворота</option>
+                            <option value="Дворец спорта">Дворец спорта</option>
+                            <option value="Кловская">Кловская</option>
+                            <option value="Печерская">Печерская</option>
+                            <option value="Дружбы народов">Дружбы народов</option>
+                            <option value="Выдубичи">Выдубичи</option>
+                            <option value="Славутич">Славутич</option>
+                            <option value="Осокорки">Осокорки</option>
+                            <option value="Позняки">Позняки</option>
+                            <option value="Харьковская">Харьковская</option>
+                            <option value="Вырлица">Вырлица</option>
+                            <option value="Бориспольская">Бориспольская</option>
+                            <option value="Героев Днепра">Героев Днепра</option>
+                            <option value="Минская">Минская</option>
+                            <option value="Оболонь">Оболонь</option>
+                            <option value="Тараса Шевченко">Тараса Шевченко</option>
+                            <option value="Контрактовая площадь">Контрактовая площадь</option>
+                            <option value="Почтовая площадь">Почтовая площадь</option>
+                            <option value="Площадь Независимости">Площадь Независимости</option>
+                            <option value="Площадь Льва Толстого">Площадь Льва Толстого</option>
+                            <option value="Олимпийская">Олимпийская</option>
+                            <option value="Дворец Украиная">Дворец Украина</option>
+                            <option value="Лыбедская">Лыбедская</option>
+                            <option value="Демиевская">Демиевская</option>
+                            <option value="Голосеевская">Голосеевская</option>
+                            <option value="Васильковская">Васильковская</option>
+                            <option value="Выставочный центр">Выставочный центр</option>
+                            <option value="Ипподром">Ипподром</option>
+                            <option value="Теремки">Теремки</option>
+
+
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="slogan">
+                <h1 class="slogan__title">Kiev Subway</h1>
+                <p class="slogan__text">
+                    you are welcome by the Kiev subway</p>
+                <div class="button-wrap">
+                    <button class="button" data-sub="#subway"> Схема Метрополітену</button>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="wrap-modal hide" id="subway">
+            <div class="modal-window">
+                <button class="close" data-sub="#subway">x</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="wrap-task-12 hide" id="branch">
+            <div class="task-12">
+                <p class="task-12__text"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<script src="/main.js"></script>
+<script src="/training.js"></script>
+
+
+</html>

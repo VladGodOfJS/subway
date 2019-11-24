@@ -1,0 +1,96 @@
+@mixin container($width,$height,$direction, $justify) {
+    width: $width;
+    height: $height;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    border: 1px solid red;   
+}
+
+@mixin wh($width,$height) {
+    width: $width;
+    height: $height;
+    
+}
+
+@mixin bgStyle($bgi,$bgz) {
+
+    background: $bgi;
+    background-repeat: no-repeat;
+    background-size: $bgz;
+    
+}
+
+@mixin flex($justify,$direction){
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+
+}
+
+@mixin colors($color1,$color2,$lineH){
+    color: $color1;
+    background-color: $color2;
+    line-height: $lineH;
+    text-align: $txtc;
+    
+}
+
+@mixin fonts($fz) {
+    font-size: $fz;
+    font-family: $ff;
+    font-weight: $fw;
+    text-align: $txtc;
+}
+
+@mixin margin($margL){
+    margin: $margL;
+}
+
+
+@mixin selectStyle($rad) {
+    border-radius: $rad;
+    appearance: none;
+    border: none;
+    padding-left: $paddL;
+    margin-left: $marginT;
+}
+
+
+@mixin afterSelect{
+    content: '';
+    position: absolute;
+    background-position: 50%;
+    width: $width;
+    height: $height;
+    background-color: $color1;
+    border-radius: 0  3px 3px 0;
+    pointer-events: none;
+}
+
+@mixin position($left,$top,$right,$bottom) {
+    left: $left;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+}
+
+@mixin befAftbtn(){
+    content: '';
+    position: absolute;
+
+}
+
+@mixin nonBorder {
+    outline: none;
+    border: none;
+    background: none;
+    
+}
+
+
+
